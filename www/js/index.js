@@ -49,6 +49,11 @@ var app = {
             $(body).css('backgroundColor','red');
         });
     },
+    testChangeOfColor: function() {
+            $("body").css('backgroundColor','green');
+            console.log("success");
+    },
+
     report: function(id) {
         // Report the event in the console
         console.log("Report: " + id);
