@@ -1,50 +1,110 @@
-<!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
-    </head>
-    <body>
-        <div class="app">
-			<div class="app">
-            	<h1>Barcode Scanner Example</h1>
-            	<br>
-            	<a ontouchend="app.scan()" class="btn large">Scan</a>
-            	<br>
-            	<button onClick="app.testChangeOfColor()">test change of color</a>
-			</div>
-        </div>
-        <script type="text/javascript" src="phonegap.js"></script>
-        <script src="barcodescanner.js"></script>
-        <script type="text/javascript" src="js/jquery.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-          
-           	//var scanner = window.PhoneGap.require("cordova/plugin/BarcodeScanner");
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		<link rel="stylesheet" type="text/css" href="fonts/fontSheet.css" />
+		<title>Hello World</title>
+	</head>
+	
+	<body>
+	<div class="app"> <!--the equivalent of body for phonegap-->
+		<header> <!--header is top bar, always present-->
+			<!-- this is the top bar. it displays user's info, coins, rewards, and settings -->
+			<ul id="topInfoDisplay"> <!-- this ul holds all sub-boxes -->
+				<!-- user's name + photo -->
+				<li class="topInfoBox" id="nameAndPhoto">
+					<img id="photoOfUser" src="img/photoOfUser.png" />
+					<span id="nameOfUser">isaac m.</span>
+				</li>
+				<!-- user's number of myCoins + myCoins logo -->
+				<li class="topInfoBox" id="myCoins">
+					<span id="numberOfCoins">0</span>
+					<img id="myCoinsLogo" src="img/myCoinsLogo.png" />
+				</li>
+				<!-- user's number of myRewards + myRewards logo -->
+				<li class="topInfoBox" id="myRewards">
+					<span id="numberOfRewards">8</span>
+					<img id="myRewardsLogo" src="img/myRewardsLogo.png" />
+				</li>
+				<!-- settings button -->
+				<li class="topInfoBox" id="settings">
+					<img id="settingsLogo" src="img/settingsLogo.png" />
+				</li>
+			
+			</ul> <!--closes topInfoDisplay which holds header's sub-boxes-->
+		</header> <!--closes the top bar-->
 		
-        </script>
-        
-    </body>
+		<!--small blurb that tells the user where he is-->
+		<section id="pageDescriptionBox">
+			<p id="pageDescription">Rewards you have purchased:</p>
+		</section>
+		
+		<!--REWARD ONE-->
+		<!--this section holds all of the rewards offered-->
+		<section id="rewardsContainer">
+			<ul class="oneReward" id="reward1"> <!--template for one reward -->
+				<li class="restaurantInfo" class="rewardsDivision">
+					<p class="restaurantName">the coffee shop</p>
+					<p class="restaurantDistance">(1 mile away)</p>
+				</li>
+				<li class="rewardPrice" class="rewardsDivision">
+					<span class="dollarValue">$10.50</span>			
+				</li>
+				<li id="useBox" class="rewardsDivision">
+					<span class="useButton">use</span>			
+				</li>
+			</ul> <!--closes oneReward-->
+			
+			<ul class="oneReward" id="reward1"> <!--template for one reward -->
+				<li class="restaurantInfo" class="rewardsDivision">
+					<p class="restaurantName">the coffee shop</p>
+					<p class="restaurantDistance">(1 mile away)</p>
+				</li>
+				<li class="rewardPrice" class="rewardsDivision">
+					<span class="dollarValue">$10.50</span>			
+				</li>
+				<li id="useBox" class="rewardsDivision">
+					<span class="useButton">use</span>			
+				</li>
+			</ul> <!--closes oneReward-->
+		</section> <!--closes rewardContainer-->
+		
+		<!--REWARD TWO-->
+		<footer> <!--the footer is always present-->
+			<nav> <!--the three nav buttons are held in here-->
+				<ul> <!--each li in this ul is a different button-->
+					<li id="myCoinsButton">
+						<img id="myCoinsButtonImage" src="img/myCoinsButtonImage.png" />
+					</li>
+					<!--this button launches the scanner-->
+					<li ontouchend="app.scan()" id="scanButton">
+						<img id="scanImage" src="img/scanImage.png" />
+						<span id="scanText">SCAN</span>
+					</li>
+					<li id="myRewardsButton">
+						<img src="img/myRewardsButton.png" />
+					</li>
+				</ul>
+			</nav>
+		</footer>
+	</div> <!-- ends the #app div (main container)-->
+	
+	<!--scripts on the bottom -->
+	<script type="text/javascript" src="phonegap.js"></script>
+	<script src="barcodescanner.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript">
+		app.initialize();
+		windowWidth = document.body.offsetWidth
+		windowHeight = document.body.offsetHeight
+		$(".app").css("width",windowWidth);
+		$(".app").css("height",windowHeight);
+	</script>
+
+	</body>
 </html>
