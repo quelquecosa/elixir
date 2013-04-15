@@ -100,11 +100,17 @@
 	<script type="text/javascript" src="js/index.js"></script>
 	<script type="text/javascript">
 		app.initialize();
+		
+		$(document).ready(function() {
 		windowWidth = document.body.offsetWidth
 		windowHeight = document.body.offsetHeight
-		$(".app").css("width",windowWidth);
-		$(".app").css("height",windowHeight);
-		alert ("width: " +windowWidth +" height: " +windowHeight);
+  			// Handler for .ready() called.
+  			$(".app").css("width",windowWidth);
+			$(".app").css("height",windowHeight);
+			$("#pageDescription").html(windowWidth +" x " + windowHeight);
+			//alert ("width: " +windowWidth +" height: " +windowHeight);
+		});
+		
 	</script>
 
 	</body>
