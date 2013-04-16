@@ -18,7 +18,7 @@
 				<!-- user's name + photo -->
 				<li class="topInfoBox" id="nameAndPhoto">
 					<img id="photoOfUser" src="img/photoOfUser.png" />
-					<span id="nameOfUser">isaac m.</span>
+					<span id="nameOfUser">isaac&nbsp;&nbsp;&nbsp; m.</span>
 				</li>
 				<!-- user's number of myCoins + myCoins logo -->
 				<li class="topInfoBox" id="myCoins">
@@ -42,8 +42,69 @@
 		<section id="pageDescriptionBox">
 			<p id="pageDescription">Rewards you have purchased:</p>
 		</section>
-
+		<!--REWARD ONE-->
+		<!--this section holds all of the rewards offered-->
+		<section id="rewardsContainer">
+			<ul class="oneReward" id="reward1"> <!--template for one reward -->
+				<li class="restaurantInfo" class="rewardsDivision">
+					<p class="restaurantName">the coffee shop</p>
+					<p class="restaurantDistance">(1 mile away)</p>
+				</li>
+				<li class="rewardPrice" class="rewardsDivision">
+					<span class="dollarValue">$10.50</span>			
+				</li>
+				<li class="useBox" class="rewardsDivision">
+					<span class="useButton">use</span>			
+				</li>
+			</ul> <!--closes reward1-->
+			
+			<!--REWARD TWO-->
+			<ul class="oneReward" id="reward2"> <!--template for one reward -->
+				<li class="restaurantInfo" class="rewardsDivision">
+					<p class="restaurantName">garden of eden</p>
+					<p class="restaurantDistance">(1.2 miles away)</p>
+				</li>
+				<li class="rewardPrice" class="rewardsDivision">
+					<span class="dollarValue">$8.50</span>			
+				</li>
+				<li class="useBox" class="rewardsDivision">
+					<span class="useButton">use</span>			
+				</li>
+			</ul> <!--closes reward2-->
+			
+			<!--REWARD THREE-->
+			<ul class="oneReward" id="reward3"> <!--template for one reward -->
+				<li class="restaurantInfo" class="rewardsDivision">
+					<p class="restaurantName">starbucks</p>
+					<p class="restaurantDistance">(3 miles away)</p>
+				</li>
+				<li class="rewardPrice" class="rewardsDivision">
+					<span class="dollarValue">$7.00</span>			
+				</li>
+				<li class="useBox" class="rewardsDivision">
+					<span class="useButton">used</span>			
+				</li>
+			</ul> <!--closes reward3-->
+		</section> <!--closes rewardContainer (EOS)-->
 		
+		<footer> <!--the footer is always present-->
+			<nav> <!--the three nav buttons are held in here-->
+				<ul> <!--each li in this ul is a different button-->
+					<li id="myCoinsButton">
+						<img id="myCoinsButtonImage" src="img/myCoinsButtonImage.png" />
+					</li>
+					<!--this button launches the scanner-->
+					<li ontouchend="app.scan()" id="scanButton">
+						<img id="scanImage" src="img/scanImage.png" />
+						<span id="scanText">SCAN</span>
+					</li>
+					<li id="myRewardsButton">
+						<img id="myRewardsButtonImage" src="img/myRewardsButtonImage.png" />
+					</li>
+				</ul>
+			</nav>
+		</footer>
+
 	</div> <!-- ends the #app div (main container)-->
 	
 	<!--scripts on the bottom -->
@@ -53,7 +114,7 @@
 	<script type="text/javascript" src="js/index.js"></script>
 	<script type="text/javascript">
 		app.initialize();
-		
+		/* unccoment this to set width and height to viewport
 		$(document).ready(function() {
 			windowWidth = document.body.offsetWidth
 			windowHeight = document.body.offsetHeight
@@ -61,6 +122,7 @@
 			$(".app").css("height",windowHeight);
 			$("#pageDescription").html(windowWidth +" x " + windowHeight);
 		});
+		/*
 		
 	</script>
 

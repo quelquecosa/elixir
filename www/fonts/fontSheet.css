@@ -84,40 +84,41 @@ body{
 
 header{
 	font-family: 'bebasregular';
-	font-size: 2.5em;
+	font-size: 20pt;
 	display: inline-table;
 }
 
 #rewardsContainer{
 	font-family: 'oceaniabold';
-	font-size: 2em;
+	font-size: 12pt;
 	text-transform:uppercase;
 }
 
+
+
 .restaurantName{
-	font-family: 'oceaniabold';
-	font-size: 2em;
+	font-size: 10pt;
 }
 
 .restaurantDistance{
 	font-family: 'oceanialight';
 	text-transform: none;
-	font-size: 1.313em;
+	font-size: 8pt;
 }
 
 .rewardPrice{
-	font-family: 'oceanialight';
-	font-size: 2.25em;
+	font-family: 'oceaniaregular';
+	font-size: 14pt;
 	
 }
 
 .useButton{
-	font-size: 2.44em;
+	font-size: 16pt;
 }
 
 #scanText {
 	font-family: 'oceaniabold';
-	font-size: 3.252em;
+	font-size: 20pt;
 	
 }
 

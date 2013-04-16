@@ -1,0 +1,82 @@
+.app{
+	width: 640px;
+	height: 960px;
+	background-color: #CDCCCC;
+}
+
+header {
+	width: 100%;
+	height: 12.18%;
+	background-color: blue;
+	color: rgba(68,68,68,.85);
+	
+	/*
+	top: 0;
+	position: fixed;
+	*/
+}
+
+.topInfoBox{
+	display: inline-table;
+}
+
+#pageDescriptionBox {
+	width: 100%;
+	height: 8.75%;
+	background-color: green;
+	font-size: 2em;
+	color: #2F5B33;
+}
+
+#pageDescription {
+	padding-top: 2.08%;
+}
+
+#rewardsContainer{
+	font-size: 100%;
+	width: 100%;
+	height: 59.03%;
+	background-color: yellow;
+	color: #444444;
+
+}
+
+ul .rewardsDivision{
+	display: inline;
+}
+
+.oneReward {
+	background-color: #D38D53;
+}
+	
+.oneReward li {
+	display: inline-table;
+}
+
+.restaurantName {
+	display: 
+}
+
+.restaurantDistance{
+	color: #000000;
+}
+
+.useButton{
+	color: #20D320;
+}
+
+footer {
+	width: 100%;
+	height: 19.92%;
+	background-color: purple;
+	/*
+	position: fixed;
+	bottom: 0;
+	*/
+}
+
+#scanText {
+	color: #EAEAEA;
+}
+
+

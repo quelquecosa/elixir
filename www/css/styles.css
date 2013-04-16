@@ -1,13 +1,13 @@
 .app{
-	width: 640px;
+	width: 320px;
 	height: 960px;
 	background-color: #CDCCCC;
 }
 
 header {
 	width: 100%;
-	height: 12.18%;
-	background-color: blue;
+	height: 58.27px;
+	background-color: red;
 	color: rgba(68,68,68,.85);
 	
 	/*
@@ -20,24 +20,46 @@ header {
 	display: inline-table;
 }
 
+#photoOfUser {
+	height: 37.5px;
+	width: auto;
+}
+
+#myRewardsLogo{
+	width: 28.8px;
+	height: auto;
+}
+
+
+#myCoinsLogo{
+	width: 25px;
+	height: auto;
+}
+
+#settingsLogo{
+	width: 25px;
+	height: auto;
+}
+
 #pageDescriptionBox {
 	width: 100%;
-	height: 8.75%;
+	height: 42.32px;
 	background-color: green;
-	font-size: 2em;
+	font-size: 12pt;
 	color: #2F5B33;
 }
 
 #pageDescription {
-	padding-top: 2.08%;
+	padding-top: 23px;
 }
 
 #rewardsContainer{
 	font-size: 100%;
 	width: 100%;
-	height: 59.03%;
+	height: 100%;
 	background-color: yellow;
 	color: #444444;
+	text-align: center;
 
 }
 
@@ -46,11 +68,24 @@ ul .rewardsDivision{
 }
 
 .oneReward {
-	background-color: #D38D53;
+	background-color: #F4F4F4;
+	border-color: #5B5B5B;
+	border:3pt solid;
+	border-radius:8px;
+	width: 289.44px;
+	height: 72.8px;
+	margin: 0 14.7px 14.7px 14.7px;
+	
 }
 	
 .oneReward li {
 	display: inline-table;
+}
+
+.restaurantInfo{
+	width: 120px;
+	margin: 1px;
+	margin-top: 22px;
 }
 
 .restaurantName {
@@ -59,24 +94,62 @@ ul .rewardsDivision{
 
 .restaurantDistance{
 	color: #000000;
+	margin-top: 11px;
+}
+
+.rewardPrice{
+	width: 81px;
+	margin: 1px;
+	margin-top: 30px;
+}
+
+.useBox{
+	width: 75px;
+	margin: 1px;
+	margin-top: 30px;
+
 }
 
 .useButton{
 	color: #20D320;
+
 }
 
 footer {
 	width: 100%;
-	height: 19.92%;
-	background-color: purple;
+	height: 93.72px;
+	background-color: #5B5B5B;
 	/*
 	position: fixed;
 	bottom: 0;
 	*/
 }
 
+nav ul li{
+display: inline-table;
+}
+
+#myCoinsButtonImage{
+	width: 37.5px;
+	height: auto;
+	margin: 6px 31px 6px 31px;
+}
+
+#scanImage{
+	width: 37.5px;
+	height: auto;
+	display: block;
+}
+
 #scanText {
 	color: #EAEAEA;
 }
+
+#myRewardsButtonImage{
+	width: 45.3px;
+	height: auto;
+}
+
+
 
 
