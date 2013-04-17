@@ -114,6 +114,9 @@
 	<script type="text/javascript" src="js/index.js"></script>
 	<script type="text/javascript">
 		app.initialize();
+		window.onresize=function(){
+			console.log (document.documentElement.clientHeight);
+		};
 		/* unccoment this to set width and height to viewport
 		$(document).ready(function() {
 			windowWidth = document.body.offsetWidth
@@ -122,7 +125,7 @@
 			$(".app").css("height",windowHeight);
 			$("#pageDescription").html(windowWidth +" x " + windowHeight);
 		});
-		/*
+		*/
 		
 	</script>
 
