@@ -79,6 +79,7 @@ header {
 	height: 72.8px;
 	margin: 0 14.7px 14.7px 14.7px;
 	background-color: fuchsia;
+	display: table;
 	
 }
 	
@@ -88,7 +89,11 @@ header {
 	border-color: #515151;
 	background-color: orange;
 	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
 }
+
+
 
 .restaurantInfo{
 	width: 120px;
