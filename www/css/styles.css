@@ -19,7 +19,7 @@ header {
 }
 
 #topInfoDisplay{
-	width: 95%;
+	width: 100%;
     margin: 0 auto;
     margin-top: 10px;
 
@@ -40,15 +40,22 @@ header {
 	background-color: none;
 }
 
+#nameOfUser {
+	padding-left: 5px;
+}
+
 #myRewardsLogo{
 	width: 28.8px;
 	height: auto;
+	padding-left: 5px;
+
 }
 
 
 #myCoinsLogo{
 	width: 25px;
 	height: auto;
+	padding-left: 5px;
 }
 
 #settings{
@@ -74,10 +81,11 @@ header {
 
 #pageDescription {
 	background-color: #E8E8E8;
-	width: 320px;
+	width: 310px;
 	position: absolute;
 	margin-top: 10px;
 	padding: 9.5px 0;
+	padding-left: 10px;
 }
 
 #rewardsContainer{
@@ -160,8 +168,11 @@ footer {
 	
 }
 
+
+
 nav ul li{
 	display: inline-table;
+
 }
 
 #myCoinsButton {
