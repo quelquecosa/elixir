@@ -6,13 +6,13 @@
         id        = "com.isaacmalca.elixir"
         version   = "1.0.0">
 
-    <name>Hello World</name>
+    <name>elixir</name>
 
     <description>
-        Hello World sample application that responds to the deviceready event.
+        elixir is an app that kills it.
     </description>
 
-    <author href="http://phonegap.com" email="support@phonegap.com">
+    <author href="me@isaacmalca.com" email="me@isaacmalca.com">
         PhoneGap Team
     </author>
 
