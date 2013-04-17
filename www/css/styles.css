@@ -9,19 +9,27 @@ header {
 	height: 58.27px;
 	background-color: red;
 	color: rgba(68,68,68,.85);
-	
-	/*
 	top: 0;
 	position: fixed;
-	*/
+	width: 320px;
+	border-bottom: 1pt solid;
+	border-color: #515151;
+
+}
+
+#topInfoDisplay{
+	margin-top: 10px;
 }
 
 .topInfoBox{
 	display: inline-table;
+	padding-left: 11px;
+	padding-right: 11px;
+	
 }
 
 #photoOfUser {
-	height: 37.5px;
+	height: 25.5px;
 	width: auto;
 	background-color: blue;
 }
@@ -45,25 +53,31 @@ header {
 #pageDescriptionBox {
 	width: 100%;
 	height: 42.32px;
-	background-color: green;
+	background-color: #CDCCCC;
 	font-size: 12pt;
 	color: #2F5B33;
+	margin-top: 57px;
 }
 
-#pageDescription {
-	padding-top: 23px;
-	background-color: lime;
 
+
+#pageDescription {
+	background-color: #E8E8E8;
+	width: 320px;
+	position: absolute;
+	margin-top: 10px;
+	padding: 9.5px 0;
 }
 
 #rewardsContainer{
 	font-size: 100%;
 	width: 100%;
 	height: 100%;
-	background-color: yellow;
+	background-color: #CDCCCC;
 	color: #444444;
 	text-align: center;
 	overflow-y: hidden;
+	margin-top: 14.7px;
 
 }
 
@@ -80,7 +94,7 @@ header {
 	width: 289.44px;
 	height: 72.8px;
 	margin: 0 14.7px 14.7px 14.7px;
-	background-color: fuchsia;
+	background-color: #F4F4F4;
 	display: table;
 	
 }
@@ -89,7 +103,7 @@ header {
 	display: inline-table;
 	border-right: 1pt solid;
 	border-color: #515151;
-	background-color: orange;
+	background-color: none;
 	height: 30%;
 	display: table-cell;
 	vertical-align: middle;
