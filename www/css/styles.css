@@ -51,6 +51,8 @@ header {
 
 #pageDescription {
 	padding-top: 23px;
+	background-color: lime;
+
 }
 
 #rewardsContainer{
@@ -63,8 +65,9 @@ header {
 
 }
 
-ul .rewardsDivision{
+.rewardsDivision{
 	display: inline;
+
 }
 
 .oneReward {
@@ -75,17 +78,20 @@ ul .rewardsDivision{
 	width: 289.44px;
 	height: 72.8px;
 	margin: 0 14.7px 14.7px 14.7px;
+	background-color: fuchsia;
 	
 }
 	
 .oneReward li {
 	display: inline-table;
+	border-right: 1pt solid;
+	border-color: #515151;
+	background-color: orange;
+	height: 100%;
 }
 
 .restaurantInfo{
 	width: 120px;
-	margin: 1px;
-	margin-top: 22px;
 }
 
 .restaurantName {
@@ -99,14 +105,10 @@ ul .rewardsDivision{
 
 .rewardPrice{
 	width: 81px;
-	margin: 1px;
-	margin-top: 30px;
 }
 
 .useBox{
 	width: 75px;
-	margin: 1px;
-	margin-top: 30px;
 
 }
 
@@ -149,6 +151,8 @@ display: inline-table;
 	width: 45.3px;
 	height: auto;
 }
+
+
 
 
 
