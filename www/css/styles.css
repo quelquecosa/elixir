@@ -1,9 +1,14 @@
+/*******/
+/*main container*/
 .app{
 	width: 320px;
 	height: 100%;
 	background-color: #CDCCCC;
 }
 
+
+/*******/
+/*top bar that holds user info + stats*/
 header {
 	width: 100%;
 	height: 35px;
@@ -69,6 +74,9 @@ header {
 	height: auto;
 }
 
+
+/*******/
+/*small blurb that describes this page*/
 #pageDescriptionBox {
 	width: 100%;
 	height: 42.32px;
@@ -77,8 +85,6 @@ header {
 	color: #2F5B33;
 	margin-top: 35px;
 }
-
-
 
 #pageDescription {
 	background-color: #E8E8E8;
@@ -89,6 +95,9 @@ header {
 	padding-left: 10px;
 }
 
+
+/*******/
+/*rewards area (main container)*/
 #rewardsContainer{
 	font-size: 100%;
 	width: 100%;
@@ -100,7 +109,6 @@ header {
 	margin-top: 14.7px;
 
 }
-
 
 .oneReward {
 	background-color: white;
@@ -148,7 +156,6 @@ header {
 .useBox{
 	width: 75px;
 	border-right: none !important;
-
 }
 
 .useButton{
@@ -157,9 +164,20 @@ header {
 }
 
 .usedButton {
-	color: #072D07;
+	color: #888;
 }
 
+.oneRewardUsed {
+	border-color: #888;
+	color: #888;
+}
+
+.restaurantDistance {
+	color: #888;
+}
+
+/*******/
+/*footer holds the navigation bar*/
 footer {
 	width: 320px ;
 	height: 50px;
@@ -168,9 +186,7 @@ footer {
 	bottom: 0;
 	border-top: 2.5pt solid;
 	border-color: #4F4C4F;
-	
 }
-
 
 
 nav ul li{
@@ -178,16 +194,12 @@ nav ul li{
 	float: left;
 	border-right: 2pt solid;
 	border-color: #4F4C4F;
-
-
 }
 
 #myCoinsButton {
 	width: 98px;
 	border-left: 2pt solid;
 	border-color: #4F4C4F;
-
-
 }
 
 #myCoinsButtonImage{
@@ -197,13 +209,12 @@ nav ul li{
 	display: block;
 	padding-top: 6px;
 	padding-bottom: 6px;
-
-
 }
 
 #scanButton{
 	width: 115px;
 }
+
 
 #scanButtonImage{
 	width: 37.5px;
@@ -211,7 +222,6 @@ nav ul li{
 	display: block;
 	margin: auto;	
 	padding-top: 3px;
-
 }
 
 #scanButtonText {
@@ -219,12 +229,10 @@ nav ul li{
 	display: block;
 	text-align: center;
 	position: relative;
-	
 }
 
 #myRewardsButton {
 	width: 98px;
-
 }
 
 #myRewardsButtonImage{
@@ -234,7 +242,6 @@ nav ul li{
 	display: block;
 	padding-top: 6px;
 	padding-bottom: 6px;
-
 }
 
 
