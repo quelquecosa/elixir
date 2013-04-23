@@ -84,6 +84,7 @@
 					<p class="useButton usedButton">used</p>			
 				</li>
 			</ul> <!--closes reward3-->
+			<div id="console">this is the console</div>
 		</section> <!--closes rewardContainer (EOS)-->
 		
 		<footer> <!--the footer is always present-->
@@ -123,17 +124,20 @@
 		};
 		*/
 		$(document).ready(function() {
+			console.log ('document ready');
+			$('#console').html("this is the console!");
+  			
   			var my_media = new Media('assets/coin.mp3', 
-  			// success callback
-        	function() {
-            	console.log("playAudio():Audio Success");
-            	$('#app').html("yeesss!");
-        	},
-        	// error callback
-        	function(err) {
-            	console.log("playAudio():Audio Error: "+err);
-            	$('#app').html("nope!");
-    		});
+  				// success callback
+        		function() {
+            		console.log("playAudio():Audio Success");
+            		$('#console').html("audio loaded");
+        		},
+        		// error callback
+        		function(err) {
+            		console.log("playAudio():Audio Error: "+err);
+            		$('#console').html("audio not loaded");
+    			});
 		});  
 
 	
