@@ -7,7 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="css/reset.css" />
 		<link rel="stylesheet" type="text/css" href="css/styles.css" />
 		<link rel="stylesheet" type="text/css" href="fonts/fontSheet.css" />
-		<title>Hello World</title>
+		<title>elixir</title>
 	</head>
 	
 	<body>
@@ -115,6 +115,8 @@
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
 	<script type="text/javascript" src="js/jqTransit.js"></script>
+	<script type="text/javascript" src="js/audioPlayer.js"></script>
+
 
 	<script type="text/javascript">
 		app.initialize();
@@ -125,21 +127,8 @@
 		*/
 		$(document).ready(function() {
 			console.log ('document ready');
-			$('#console').html("this is the console!");
-  			
-  			var my_media = new Media('assets/coin.mp3', 
-  				// success callback
-        		function() {
-            		console.log("playAudio():Audio Success");
-            		$('#console').html("audio loaded");
-        		},
-        		// error callback
-        		function(err) {
-            		console.log("playAudio():Audio Error: "+err);
-            		$('#console').html("audio not loaded");
-    			});
-    		
-    		$('#console').html (my_media);
+			$('#console').html("this is the console!"); 
+			playAudio("assets/coin.mp3");   		
 		});  
 
 	

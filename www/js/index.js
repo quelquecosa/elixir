@@ -64,7 +64,6 @@ var app = {
 					y: '-6000px' 
 				});			
 				$('.cheese').fadeOut();
-				my_media.play();
 	},
     report: function(id) {
         // Report the event in the console
