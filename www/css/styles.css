@@ -244,6 +244,21 @@ nav ul li{
 	padding-bottom: 6px;
 }
 
+/*****/
+/* coinAnimationContainer holds the +1 animation*/
+
+#coinAnimationContainer{
+	background-color: black;
+	z-index: 40;
+	width: 320px;
+	height: 100%;
+}
+			
+.cheese {
+	width: 300px;
+	height: auto;
+}
+
 
 
 

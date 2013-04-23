@@ -45,14 +45,25 @@ var app = {
     scan: function() {
         window.plugins.barcodeScanner.scan( function(result) {
             $(body).css('backgroundColor','green');
+            cheese();
         }, function(error) {
-            $(body).css('backgroundColor','red');
+            alert("error");
         });
     },
-    testChangeOfColor: function() {
-            $("body").css('backgroundColor','green');
-            console.log("success");
-    },
+    cheese: function () {		
+				$('.cheese').fadeIn();
+				$('.cheese').transition({ 
+					y: '-550px' 
+				});
+				$('.cheese').transition({
+  					perspective: '100px',
+  					rotateY: '360deg',
+				});
+				$('.cheese').transition({ 
+					y: '-6000px' 
+				});			
+				$('.cheese').fadeOut();
+	},
 
     report: function(id) {
         // Report the event in the console

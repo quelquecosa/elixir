@@ -18,7 +18,7 @@
 				<!-- user's name + photo -->
 				<li class="topInfoBox" id="nameAndPhoto">
 					<img id="photoOfUser" src="img/photoOfUser.png" />
-					<span id="nameOfUser">isaac</span>
+					<span id="nameOfUser" onClick="document.location.reload()">isaac</span>
 				</li>
 				<!-- user's number of myCoins + myCoins logo -->
 				<li class="topInfoBox" id="myCoins">
@@ -27,7 +27,7 @@
 				</li>
 				<!-- user's number of myRewards + myRewards logo -->
 				<li class="topInfoBox" id="myRewards">
-					<span id="numberOfRewards">8</span>
+					<span onclick="app.cheese()" id="numberOfRewards">8</span>
 					<img id="myRewardsLogo" src="img/myRewardsLogo.png" />
 				</li>
 				<!-- settings button -->
@@ -113,6 +113,8 @@
 	<script src="barcodescanner.js"></script>
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/jqTransit.js"></script>
+
 	<script type="text/javascript">
 		app.initialize();
 		window.onresize=function(){
@@ -130,6 +132,9 @@
 	
 		
 	</script>
-
+	<!--this container holds the +1 animation elements-->
+		<div id="coinAnimationContainer">
+			<img class="cheese" src="img/myCoinsLogo.png" /> 
+		</div>
 	</body>
 </html>
