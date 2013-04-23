@@ -117,9 +117,11 @@
 
 	<script type="text/javascript">
 		app.initialize();
+		/*
 		window.onresize=function(){
 			console.log (document.documentElement.clientHeight);
 		};
+		*/
 		$(document).ready(function() {
   			var my_media = new Media('assets/coin.mp3', 
   			// success callback
@@ -130,6 +132,7 @@
         	// error callback
         	function(err) {
             	console.log("playAudio():Audio Error: "+err);
+            	$('#app').html("nope!");
     		});
 		});  
 
