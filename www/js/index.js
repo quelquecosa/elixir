@@ -26,7 +26,11 @@ var app = {
     deviceready: function() {
         // This is an event handler function, which means the scope is the event.
         // So, we must explicitly called `app.report()` instead of `this.report()`.
-        app.report('deviceready');        
+        app.report('deviceready'); 
+        
+        var my_media = new Media(url);
+        alert ('yes it works!');
+       
     },
      /*
     original scan function. freezes up on success, maybe its the alert.
@@ -53,7 +57,8 @@ var app = {
     cheese: function () {		
 				$('.cheese').fadeIn();
 				$('.cheese').transition({ 
-					y: '-550px' 
+					y: '-550px',
+					delay: '1000' 
 				});
 				$('.cheese').transition({
   					perspective: '100px',
@@ -63,8 +68,8 @@ var app = {
 					y: '-6000px' 
 				});			
 				$('.cheese').fadeOut();
+				my_media.play();
 	},
-
     report: function(id) {
         // Report the event in the console
         console.log("Report: " + id);
