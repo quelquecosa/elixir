@@ -26,11 +26,7 @@ var app = {
     deviceready: function() {
         // This is an event handler function, which means the scope is the event.
         // So, we must explicitly called `app.report()` instead of `this.report()`.
-        app.report('deviceready'); 
-        
-        var my_media = new Media(url);
-        alert ('yes it works!');
-       
+        app.report('deviceready');         
     },
      /*
     original scan function. freezes up on success, maybe its the alert.
