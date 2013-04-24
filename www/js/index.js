@@ -45,14 +45,14 @@ var app = {
     scan: function() {
         window.plugins.barcodeScanner.scan( 
         	function(result) { //callback
+        		$('#console').html('scan successful!');
         	    cheese();
-        	    plusOneCoin();
-        	    updateCoins();
+        	    plusOneCoin(updateCoins());
         	}, 
         	function(error) { //callback
             	alert("error");
         	}
-        );
+        );  
     },
     
     cheese: function () {		
@@ -74,7 +74,7 @@ var app = {
 			}
 		);
 		$('.cheese').transition({y: '10400px'});
-		$('.cheese').transition({rotateY: '-180deg'});			
+		$('.cheese').transition({rotateY: '-180deg'});
 	},
 	
 	plusOneCoin: function (){
