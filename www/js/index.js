@@ -58,11 +58,11 @@ var app = {
     
     cheese: function () {		
 		$('.cheese').transition({ 
-			y: '-400px',
-			delay: '1000' 
+			y: '-400px'
 		});
-		$('.cheese').transition({
-			rotateY: '180deg', 
+		
+		$('.cheese').transition({ 
+			delay: '800' 
 		});
 				
 		$(".cheese").transition({ 
@@ -75,7 +75,6 @@ var app = {
 			}
 		);
 		$('.cheese').transition({y: '10400px'});
-		$('.cheese').transition({rotateY: '-180deg'});
 	},
 	
 	plusOneCoin: function (){
