@@ -115,7 +115,7 @@
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
 	<script type="text/javascript" src="js/jqTransit.js"></script>
-	<script type="text/javascript" src="js/audioPlayer.js"></script>
+	<script type="text/javascript" src="js/db.js"></script>
 
 
 	<script type="text/javascript">
@@ -127,18 +127,18 @@
 		
 		$(document).ready(function() {
 			console.log ('document ready');
-			$('#console').html("this is the console!"); 
-			playAudio("assets/coin.mp3");   		
-		});  
+			$('#console').html("this is the console!");
+			console.log (elixir.balls); 
+		});
 
-	
-		
+		app.updateCoins(); 
 	</script>
-	<!--this container holds the +1 animation elements-->
+	<!--this container holds the assets for the +1 animation-->
 		<div id="coinAnimationContainer">
-			<img class="cheese" src="img/cheese.png" /> 
+			<img class="cheese" src="img/cheese.png" />
+			<audio src='assets/coin.mp3' id='sound'> 
 		</div>
-		<audio src='assets/coin.mp3' id='sound'>
+		
 
 	</body>
 </html>

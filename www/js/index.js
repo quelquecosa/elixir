@@ -46,35 +46,48 @@ var app = {
         window.plugins.barcodeScanner.scan( 
         	function(result) { //callback
         	    cheese();
+        	    plusOneCoin();
+        	    updateCoins();
         	}, 
         	function(error) { //callback
             	alert("error");
         	}
         );
     },
+    
     cheese: function () {		
-				$('.cheese').transition({ 
-					y: '-400px',
-					delay: '1000' 
-				});
-				$('.cheese').transition({
-					rotateY: '180deg', 
-					delay: '1000'
-				});
+		$('.cheese').transition({ 
+			y: '-400px',
+			delay: '1000' 
+		});
+		$('.cheese').transition({
+			rotateY: '180deg', 
+			delay: '1000'
+		});
 				
-				$(".cheese").transition({ 
-					y: '-10000px' 
-				}, 
-					function(){ //this is a callback function
-						document.getElementById("sound").play();
-					}
-				);
-				$('.cheese').transition({y: '10400px'});
-				$('.cheese').transition({rotateY: '-180deg'});
-
-	
-					
+		$(".cheese").transition({ 
+			y: '-10000px' 
+		}, 
+			function(){ //this is a callback function
+				//plays sound defined in html <audio>
+				document.getElementById("sound").play();
+			}
+		);
+		$('.cheese').transition({y: '10400px'});
+		$('.cheese').transition({rotateY: '-180deg'});			
 	},
+	
+	plusOneCoin: function (){
+		elixir.userCoins++;
+		console.log ("coin added. new number of coins is " + elixir.userCoins)
+	},
+	
+	updateCoins: function(){
+		$('#numberOfCoins').html(elixir.userCoins);
+		console.log ('number of coins synced');
+	},
+
+
     report: function(id) {
         // Report the event in the console
         console.log("Report: " + id);
