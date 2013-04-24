@@ -1,7 +1,7 @@
 
 
 /*******/
-/*rewards area (main container)*/
+/*rewardsYouCanGet area (main container)*/
 #availableRewardsContainer{
 	font-size: 100%;
 	width: 100%;
@@ -79,10 +79,6 @@
 }
 
 
-
-.restaurantDistance {
-	color: #888;
-}
 
 
 

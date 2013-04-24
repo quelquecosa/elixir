@@ -94,6 +94,26 @@ var app = {
 		$('#numberOfCoins').html(elixir.userCoins);
 		console.log ('number of coins synced');
 	},
+	
+	loadRewardsYouCanGet: function(){
+		$('#pageDescription').html('Rewards you can get:');
+		$.get('./rewardsYouCanGet.html', function(data) {
+  			$('#rewardsContainer').replaceWith(data);
+  			console.log('ajax for rewardsYouCanGet worked!');
+		});
+		console.log ('loaded RewardsYouCanGet');
+	},
+	
+	loadMyRewards: function(){
+		$('#pageDescription').html('Your rewards:');
+		
+		$.get('./yourRewards.html', function(data) {
+  			$('#availableRewardsContainer').replaceWith(data);
+  			console.log('ajax for rewardsYouCanGet worked!');
+		});
+		console.log ('loaded availableRewardsContainer');
+
+	},
 
 
     report: function(id) {

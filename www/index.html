@@ -6,6 +6,7 @@
 		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 		<link rel="stylesheet" type="text/css" href="css/reset.css" />
 		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		<link rel="stylesheet" type="text/css" href="css/styles_copy.css" />
 		<link rel="stylesheet" type="text/css" href="fonts/fontSheet.css" />
 		<title>elixir</title>
 	</head>
@@ -42,9 +43,9 @@
 		<section id="pageDescriptionBox">
 			<p id="pageDescription">Your rewards:</p>
 		</section>
-		<!--REWARD ONE-->
 		<!--this section holds all of the rewards offered-->
 		<section id="rewardsContainer">
+			<!--REWARD ONE-->
 			<ul class="oneReward" id="reward1"> <!--template for one reward -->
 				<li class="restaurantInfo" class="rewardsDivision">
 					<p class="restaurantName">the coffee shop</p>
@@ -90,7 +91,7 @@
 		<footer> <!--the footer is always present-->
 			<nav> <!--the three nav buttons are held in here-->
 				<ul> <!--each li in this ul is a different button-->
-					<li id="myCoinsButton">
+					<li ontouchend="app.loadRewardsYouCanGet()" id="myCoinsButton">
 						<img id="myCoinsButtonImage" src="img/myCoinsButtonImage.png" />
 					</li>
 					<!--this button launches the scanner-->
@@ -98,7 +99,7 @@
 						<img id="scanButtonImage" src="img/scanImage.png" />
 						<p id="scanButtonText">SCAN</p>
 					</li>
-					<li id="myRewardsButton">
+					<li ontouchend="app.loadMyRewards()" id="myRewardsButton">
 						<img id="myRewardsButtonImage" src="img/myRewardsButtonImage.png" />
 					</li>
 				</ul>
@@ -138,8 +139,6 @@
 		<div id="coinAnimationContainer">
 			<img class="cheese" src="img/cheese.png" />
 			<audio src='assets/coin.mp3' id='sound'> 
-		</div>
-		
-
+		</div>				
 	</body>
 </html>
