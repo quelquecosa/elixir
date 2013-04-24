@@ -29,7 +29,7 @@ var app = {
         app.report('deviceready');         
     },
      /*
-    original scan function. freezes up on success, maybe its the alert.
+    original ('default') scan function. freezes up on success, maybe its the alert.
     scan: function() {
         window.plugins.barcodeScanner.scan( function(result) {
             alert("We got a barcode\n" +
@@ -44,26 +44,27 @@ var app = {
     //new one, changing the div background if scan is succesful
     scan: function() {
         window.plugins.barcodeScanner.scan( function(result) {
-            $(body).css('backgroundColor','green');
             cheese();
         }, function(error) {
             alert("error");
         });
     },
     cheese: function () {		
-				$('.cheese').fadeIn();
 				$('.cheese').transition({ 
 					y: '-550px',
 					delay: '1000' 
 				});
 				$('.cheese').transition({
-  					perspective: '100px',
-  					rotateY: '360deg',
+					rotateY: '180deg', 
+					delay: '1000'
 				});
-				$('.cheese').transition({ 
-					y: '-6000px' 
-				});			
-				$('.cheese').fadeOut();
+				$('.cheese').transition({
+					y: '-10000px'
+				});
+				$('.cheese').transition({y: '10550px'});
+				$('.cheese').transition({rotateY: '-180deg'});
+
+					
 	},
     report: function(id) {
         // Report the event in the console

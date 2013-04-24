@@ -252,6 +252,7 @@ nav ul li{
 	z-index: 40;
 	width: 320px;
 	height: 100%;
+	position: fixed;
 }
 			
 .cheese {
