@@ -46,8 +46,9 @@ var app = {
         window.plugins.barcodeScanner.scan( 
         	function(result) { //callback
         		$('#console').html('scan successful!');
-        	    cheese();
-        	    plusOneCoin(updateCoins());
+        	    app.cheese();
+        	    app.plusOneCoin();
+        	    app.updateCoins();
         	}, 
         	function(error) { //callback
             	alert("error");
