@@ -43,11 +43,14 @@ var app = {
     */
     //new one, changing the div background if scan is succesful
     scan: function() {
-        window.plugins.barcodeScanner.scan( function(result) {
-            cheese();
-        }, function(error) {
-            alert("error");
-        });
+        window.plugins.barcodeScanner.scan( 
+        	function(result) { //callback
+        	    cheese();
+        	}, 
+        	function(error) { //callback
+            	alert("error");
+        	}
+        );
     },
     cheese: function () {		
 				$('.cheese').transition({ 
@@ -58,12 +61,18 @@ var app = {
 					rotateY: '180deg', 
 					delay: '1000'
 				});
-				$('.cheese').transition({
-					y: '-10000px'
-				});
+				
+				$(".cheese").transition({ 
+					y: '-10000px' 
+				}, 
+					function(){ //this is a callback function
+						document.getElementById("sound").play();
+					}
+				);
 				$('.cheese').transition({y: '10550px'});
 				$('.cheese').transition({rotateY: '-180deg'});
 
+	
 					
 	},
     report: function(id) {
