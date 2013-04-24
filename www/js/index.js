@@ -54,7 +54,7 @@ var app = {
     },
     cheese: function () {		
 				$('.cheese').transition({ 
-					y: '-550px',
+					y: '-400px',
 					delay: '1000' 
 				});
 				$('.cheese').transition({
@@ -69,7 +69,7 @@ var app = {
 						document.getElementById("sound").play();
 					}
 				);
-				$('.cheese').transition({y: '10550px'});
+				$('.cheese').transition({y: '10400px'});
 				$('.cheese').transition({rotateY: '-180deg'});
 
 	
