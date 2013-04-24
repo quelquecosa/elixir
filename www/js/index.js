@@ -62,7 +62,15 @@ var app = {
 		});
 		
 		$('.cheese').transition({ 
-			delay: '800' 
+			delay: '100' 
+		});
+		
+		$('.cheese').transition({ 
+			rotateY: '180deg' 
+		});
+		
+		$('.cheese').transition({ 
+			delay: '500'
 		});
 				
 		$(".cheese").transition({ 
