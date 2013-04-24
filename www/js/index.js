@@ -63,7 +63,6 @@ var app = {
 		});
 		$('.cheese').transition({
 			rotateY: '180deg', 
-			delay: '1000'
 		});
 				
 		$(".cheese").transition({ 
