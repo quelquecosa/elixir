@@ -95,7 +95,6 @@ header{
 }
 
 
-
 .restaurantName{
 	font-size: 10pt;
 }
@@ -123,22 +122,36 @@ header{
 }
 
 
+/*new screen, available rewards*/
 
+#availableRewardsContainer{
+	font-family: 'oceaniabold';
+	font-size: 12pt;
+	text-transform:uppercase;
+}
 
+.availableRestaurantName{
+	font-size: 10pt;
+}
 
+.AvailableRestaurantDistance{
+	font-family: 'oceanialight';
+	text-transform: none;
+	font-size: 8pt;
+}
 
+.AvailableRewardPrice{
+	font-family: 'oceaniaregular';
+	font-size: 14pt;
+}
 
+.availableDollarValue{
+	font-family: 'oceaniaregular';
+	text-transform: lowercase;	
+	font-size: 11pt; 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.getButton{
+	font-size: 16pt;
+}
 

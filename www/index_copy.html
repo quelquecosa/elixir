@@ -6,6 +6,8 @@
 		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 		<link rel="stylesheet" type="text/css" href="css/reset.css" />
 		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		<link rel="stylesheet" type="text/css" href="css/styles_copy.css" />
+
 		<link rel="stylesheet" type="text/css" href="fonts/fontSheet.css" />
 		<title>elixir</title>
 	</head>
@@ -40,50 +42,53 @@
 		
 		<!--small blurb that tells the user where he is-->
 		<section id="pageDescriptionBox">
-			<p id="pageDescription">Your rewards:</p>
+			<p id="pageDescription">Rewards you can get:</p>
 		</section>
-		<!--REWARD ONE-->
 		<!--this section holds all of the rewards offered-->
-		<section id="rewardsContainer">
-			<ul class="oneReward" id="reward1"> <!--template for one reward -->
-				<li class="restaurantInfo" class="rewardsDivision">
-					<p class="restaurantName">the coffee shop</p>
-					<p class="restaurantDistance">(1 mile away)</p>
+		<section id="availableRewardsContainer">
+			<!--AVAILABLE REWARD ONE-->
+			<ul class="oneAvailableReward" id="availableReward1"> <!--template for one reward -->
+				<li class="availableRestaurantInfo" class="availableRewardsDivision">
+					<p class="availableDollarValue">$10.50 at</p>
+					<p class="availableRestaurantName">the coffee shop</p>
+					<p class="availableRestaurantDistance">(1 mile away)</p>
 				</li>
-				<li class="rewardPrice" class="rewardsDivision">
-					<p class="dollarValue">$10.50</p>			
+				<li class="availableRewardPrice" class="availableRewardsDivision">
+					<p class="availableDollarValue">13</p>
+					<img id="myCoinsLogo" src="img/myCoinsLogo.png" />
 				</li>
-				<li class="useBox" class="rewardsDivision">
-					<p class="useButton">use</p>			
+				<li class="getBox" class="availableRewardsDivision">
+					<p class="getButton">get</p>			
 				</li>
-			</ul> <!--closes reward1-->
+			</ul> <!--closes AvailableReward1-->
 			
-			<!--REWARD TWO-->
-			<ul class="oneReward" id="reward2"> <!--template for one reward -->
-				<li class="restaurantInfo" class="rewardsDivision">
-					<p class="restaurantName">garden of eden</p>
-					<p class="restaurantDistance">(1.2 miles away)</p>
+			<!--AVAILABLE REWARD TWO-->
+			<ul class="oneAvailableReward" id="availableReward2"> <!--template for one reward -->
+				<li class="availableRestaurantInfo" class="availableRewardsDivision">
+					<p class="availableRestaurantName">the coffee shop</p>
+					<p class="availableRestaurantDistance">(1 mile away)</p>
 				</li>
-				<li class="rewardPrice" class="rewardsDivision">
-					<p class="dollarValue">$8.50</p>			
+				<li class="availableRewardPrice" class="availableRewardsDivision">
+					<p class="availableDollarValue">$10.50</p>			
 				</li>
-				<li class="useBox" class="rewardsDivision">
-					<p class="useButton">use</p>			
+				<li class="getBox" class="availableRewardsDivision">
+					<p class="getButton">get</p>			
 				</li>
-			</ul> <!--closes reward2-->
+			</ul> <!--closes AvailableReward2-->
 			
-			<!--REWARD THREE-->
-			<ul class="oneReward oneRewardUsed" id="reward3"> <!--template for one reward -->
-				<li class="restaurantInfo" class="rewardsDivision">
-					<p class="restaurantName">starbucks</p>
+			<!--AVAILABLE REWARD THREE-->
+			<ul class="oneAvailableReward" id="availableReward3"> <!--template for one reward -->
+				<li class="availableRestaurantInfo" class="availableRewardsDivision">
+					<p class="availableRestaurantName">the coffee shop</p>
+					<p class="availableRestaurantDistance">(1 mile away)</p>
 				</li>
-				<li class="rewardPrice" class="rewardsDivision">
-					<p class="dollarValue">$7.00</p>			
+				<li class="availableRewardPrice" class="availableRewardsDivision">
+					<p class="availableDollarValue">$10.50</p>			
 				</li>
-				<li class="useBox" class="rewardsDivision">
-					<p class="useButton usedButton">used</p>			
+				<li class="getBox" class="availableRewardsDivision">
+					<p class="getButton">get</p>			
 				</li>
-			</ul> <!--closes reward3-->
+			</ul> <!--closes AvailableReward3-->
 			<span>console:</span><div id="console">this is the console</div>
 		</section> <!--closes rewardContainer (EOS)-->
 		

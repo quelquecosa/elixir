@@ -74,7 +74,7 @@ var app = {
 		});
 				
 		$(".cheese").transition({ 
-			y: '-10000px' 
+			y: '-2000px' 
 		}, 
 			function(){ //this is a callback function
 				//plays sound defined in html <audio>
@@ -82,7 +82,7 @@ var app = {
 				app.updateCoins();
 			}
 		);
-		$('.cheese').transition({y: '10400px'});
+		$('.cheese').transition({y: '2400px'});
 	},
 	
 	plusOneCoin: function (){
