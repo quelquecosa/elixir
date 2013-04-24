@@ -44,13 +44,12 @@ var app = {
     //new one, changing the div background if scan is succesful
     scan: function() {
         window.plugins.barcodeScanner.scan( 
-        	function(result) { //callback
+        	function(success) { //callback
         		$('#console').html('scan successful!');
         	    app.plusOneCoin();
         	    app.cheese();
-
         	}, 
-        	function(error) { //callback
+        	function(fail) { //callback
             	alert("error");
         	}
         );  
