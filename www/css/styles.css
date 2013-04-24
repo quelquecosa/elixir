@@ -105,7 +105,7 @@ header {
 	background-color: #CDCCCC;
 	color: #444444;
 	text-align: center;
-	overflow-y: hidden;
+	overflow-y: auto;
 	margin-top: 14.7px;
 
 }
@@ -248,7 +248,7 @@ nav ul li{
 /* coinAnimationContainer holds the +1 animation*/
 
 #coinAnimationContainer{
-	background-color: black;
+	background-color: #4F4C4F;
 	z-index: 40;
 	width: 320px;
 	height: 100%;
