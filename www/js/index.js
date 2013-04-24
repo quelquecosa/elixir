@@ -48,8 +48,8 @@ var app = {
         		$('#console').html('scan successful!');
         	    app.cheese();
         	    app.plusOneCoin();
-        	    
-        	, app.updateCoins()}, 
+        	    app.updateCoins();
+        	}, 
         	function(error) { //callback
             	alert("error");
         	}
