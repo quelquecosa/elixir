@@ -129,9 +129,37 @@
 		$(document).ready(function() {
 			console.log ('document ready');
 			$('#console').html("this is the console!");
-		});
 
-		app.updateCoins();
+		});
+				
+		(function($) {
+     $.fn.doubleTap = function(doubleTapCallback) {
+         return this.each(function(){
+			var elm = this;
+			var lastTap = 0;
+			$(elm).bind('vmousedown', function (e) {
+                                var now = (new Date()).valueOf();
+				var diff = (now - lastTap);
+                                lastTap = now ;
+                                if (diff < 250) {
+		                    if($.isFunction( doubleTapCallback ))
+		                    {
+		                       doubleTapCallback.call(elm);
+		                    }
+                                }      
+			});
+         });
+    }
+})(jQuery);
+	
+	//  put class="doubleTap" on the elements you need to double tap
+$(".app").doubleTap(function(){
+			$(#console).html('doubleTap!');
+			app.scan();
+  });
+
+
+
 		
 		 
 	</script>

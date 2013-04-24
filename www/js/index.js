@@ -50,6 +50,9 @@ var app = {
         	    	app.plusOneCoin();
         	    	app.cheese();
         		}
+        		else{
+        			$('#console').html("scan detected, wrong barcode");
+        		}
         	}, 
         	function(error) { //callback
             	alert("error");
