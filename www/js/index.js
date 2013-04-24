@@ -45,9 +45,11 @@ var app = {
     scan: function() {
         window.plugins.barcodeScanner.scan( 
         	function(result) { //callback
-        		$('#console').html(result.text);
-        	    app.plusOneCoin();
-        	    app.cheese();
+        		if (result.text == 01248166){
+        			$('#console').html(result.text);
+        	    	app.plusOneCoin();
+        	    	app.cheese();
+        		}
         	}, 
         	function(error) { //callback
             	alert("error");
