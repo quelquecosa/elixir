@@ -46,9 +46,9 @@ var app = {
         window.plugins.barcodeScanner.scan( 
         	function(result) { //callback
         		$('#console').html('scan successful!');
-        	    app.cheese();
         	    app.plusOneCoin();
-        	    app.updateCoins();
+        	    app.cheese();
+
         	}, 
         	function(error) { //callback
             	alert("error");
@@ -72,6 +72,7 @@ var app = {
 			function(){ //this is a callback function
 				//plays sound defined in html <audio>
 				document.getElementById("sound").play();
+				app.updateCoins();
 			}
 		);
 		$('.cheese').transition({y: '10400px'});
