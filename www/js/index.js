@@ -65,19 +65,15 @@ var app = {
 		$('.cheese').transition({ 
 			y: '-400px'
 		});
-		
 		$('.cheese').transition({ 
 			delay: '100' 
 		});
-		
 		$('.cheese').transition({ 
 			rotateY: '180deg' 
 		});
-		
 		$('.cheese').transition({ 
 			delay: '500'
-		});
-				
+		});		
 		$(".cheese").transition({ 
 			y: '-2000px' 
 		}, 
@@ -105,6 +101,8 @@ var app = {
 		$.get('./rewardsYouCanGet.html', function(data) {
   			$('#rewardsContainer').replaceWith(data);
   			console.log('ajax for rewardsYouCanGet worked!');
+  			$('#myRewardsButtonImage').attr("src","img/myRewardsButtonImage.png");
+  			$('#myCoinsButtonImage').attr("src","img/myCoinsButtonImageActive.png");
 		});
 		console.log ('loaded RewardsYouCanGet');
 	},
@@ -115,6 +113,8 @@ var app = {
 		$.get('./yourRewards.html', function(data) {
   			$('#availableRewardsContainer').replaceWith(data);
   			console.log('ajax for rewardsYouCanGet worked!');
+  			$('#myCoinsButtonImage').attr("src","img/myCoinsButtonImage.png");
+  			$('#myRewardsButtonImage').attr("src","img/myRewardsButtonImageActive.png");
 		});
 		console.log ('loaded availableRewardsContainer');
 

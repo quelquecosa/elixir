@@ -91,7 +91,7 @@
 		<footer> <!--the footer is always present-->
 			<nav> <!--the three nav buttons are held in here-->
 				<ul> <!--each li in this ul is a different button-->
-					<li ontouchend="app.loadRewardsYouCanGet()" id="myCoinsButton">
+					<li onclick="app.loadRewardsYouCanGet()" ontouchend="app.loadRewardsYouCanGet()" id="myCoinsButton">
 						<img id="myCoinsButtonImage" src="img/myCoinsButtonImage.png" />
 					</li>
 					<!--this button launches the scanner-->
@@ -99,8 +99,8 @@
 						<img id="scanButtonImage" src="img/scanImage.png" />
 						<p id="scanButtonText">SCAN</p>
 					</li>
-					<li ontouchend="app.loadMyRewards()" id="myRewardsButton">
-						<img id="myRewardsButtonImage" src="img/myRewardsButtonImage.png" />
+					<li onclick="app.loadMyRewards()" ontouchend="app.loadMyRewards()" id="myRewardsButton">
+						<img id="myRewardsButtonImage" src="img/myRewardsButtonImageActive.png" />
 					</li>
 				</ul>
 			</nav>

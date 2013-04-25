@@ -145,10 +145,10 @@ header{
 	font-size: 14pt;
 }
 
-.availableDollarValue{
+.availableCoinCost{
 	font-family: 'oceaniaregular';
 	text-transform: lowercase;	
-	font-size: 11pt; 
+	font-size: 14pt; 
 }
 
 .getButton{
