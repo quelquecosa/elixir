@@ -275,14 +275,16 @@ nav ul li{
 }
 
 #giftcard{
-	-webkit-transform: rotate(-90deg);
 	background-color: #F4F4F4;
-	width: 413.5px;
-	height: 256px;
+	width: 400px;
+	height: 285px;
 	border:5pt solid;
 	border-radius:8px;
 	border-color: #40AD31;
 	color: #444;
+	-webkit-transform: rotate(-90deg);
+	margin-left: -45px;
+
 
 
 }
@@ -328,7 +330,7 @@ nav ul li{
 
 #giftcardBarcodeNumber{
 	font-family: 'oceaniaregular';
-	font-size: 13pt;
+	font-size: 11pt;
 	color: black;
 	letter-spacing: 10px;
 	padding-top: 5px;
