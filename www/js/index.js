@@ -41,7 +41,7 @@ var app = {
         });
     },
     */
-    //new one, changing the div background if scan is succesful
+    //scan. if succesful, add one coin and show the animation
     scan: function() {
         window.plugins.barcodeScanner.scan( 
         	function(result) { //callback
@@ -61,6 +61,7 @@ var app = {
         );  
     },
     
+    //cheese is the animation for when user gets a sucessful scan ('coronation')
     cheese: function () {		
 		$('.cheese').transition({ 
 			y: '-400px'
@@ -86,16 +87,19 @@ var app = {
 		$('.cheese').transition({y: '2400px'});
 	},
 	
+	//adds one coin to the coin count
 	plusOneCoin: function (){
 		elixir.userCoins++;
 		console.log ("coin added. new number of coins is " + elixir.userCoins)
 	},
 	
+	//sync number of coins with database
 	updateCoins: function(){
 		$('#numberOfCoins').html(elixir.userCoins);
 		console.log ('number of coins synced');
 	},
 	
+	//when the user clicks on the RewardsYouCanGet button (nav bar), the page description changes and new content is loaded.
 	loadRewardsYouCanGet: function(){
 		$('#pageDescription').html('Rewards you can get:');
 		$.get('./rewardsYouCanGet.html', function(data) {
@@ -107,6 +111,7 @@ var app = {
 		console.log ('loaded RewardsYouCanGet');
 	},
 	
+	//same as above but for MyRewards instead
 	loadMyRewards: function(){
 		$('#pageDescription').html('Your rewards:');
 		
@@ -120,7 +125,7 @@ var app = {
 
 	},
 
-
+	//not sure what this does, it came with phoneGap's emptyExample
     report: function(id) {
         // Report the event in the console
         console.log("Report: " + id);

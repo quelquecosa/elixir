@@ -134,6 +134,12 @@ header{
 	font-size: 10pt;
 }
 
+.availableDollarValue{
+	font-family: 'oceaniaregular';
+	font-size: 10pt;
+	text-transform: lowercase;
+}
+
 .AvailableRestaurantDistance{
 	font-family: 'oceanialight';
 	text-transform: none;

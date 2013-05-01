@@ -246,7 +246,6 @@ nav ul li{
 
 /*****/
 /* coinAnimationContainer holds the +1 animation*/
-
 #coinAnimationContainer{
 	background-color: #4F4C4F;
 	z-index: 40;
@@ -259,6 +258,84 @@ nav ul li{
 	width: 250px;
 	height: auto;
 	margin: 0 35px;
+}
+
+
+/*****/
+/* giftcardContainer holds the giftcard screen for restaurant to scan*/
+
+#giftcardContainer{
+	/*background-color: #CDCCCC;*/
+	background-color: red;
+	z-index: 30;
+	width: 320px;
+	height: 100%;
+
+
+}
+
+#giftcard{
+	-webkit-transform: rotate(-90deg);
+	background-color: #F4F4F4;
+	width: 413.5px;
+	height: 256px;
+	border:5pt solid;
+	border-radius:8px;
+	border-color: #40AD31;
+	color: #444;
+
+
+}
+
+#giftcardRestaurantName{
+	font-family: 'oceaniabold';
+	font-size: 25pt;
+	text-transform:uppercase;
+	padding-left: 30px;
+	padding-top: 30px;
+}
+
+#giftcardAvailableCredit{
+	font-family: 'oceaniamedium';
+	font-size: 20pt;
+	text-transform:uppercase;
+	padding-left: 30px;
+	padding-top: 20px;
+
+}
+
+#giftcardInstructionForAttendant{
+	font-family: 'oceaniaregular';
+	font-size: 10pt;
+	color: black;
+	padding-left: 30px;
+	padding-top: 25px;
+	padding-bottom: 20px;
+}
+
+#giftcardBarcodeImageAndNumberContainer{
+	border-top: 1pt solid;
+	border-color: #B5B5B5;
+	margin: 0 2px;
+}
+
+#giftcardBarcodeImage{
+	width: 300px;
+	height: auto;
+	padding-top: 20px;
+	padding-left: 50px;
+}
+
+#giftcardBarcodeNumber{
+	font-family: 'oceaniaregular';
+	font-size: 13pt;
+	color: black;
+	letter-spacing: 10px;
+	padding-top: 5px;
+	padding-bottom: 18px;
+	padding-left: 50px;
+
+
 }
 
 

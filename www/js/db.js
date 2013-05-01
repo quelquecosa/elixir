@@ -1,4 +1,3 @@
 var elixir = {
-	"userCoins": 5,
-	"balls": 2
+	"userCoins": 0
 }
