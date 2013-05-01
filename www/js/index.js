@@ -128,7 +128,7 @@ var app = {
 	//same as above but for MyRewards instead
 	showGiftcard: function(){
 		$(".app").css( "opacity", "0" );
-		$('#giftcardContainer').transition({ y: '-680px' });
+		$('#giftcardContainer').transition({ y: '-650px' });
 	},
 
 	//not sure what this does, it came with phoneGap's emptyExample
