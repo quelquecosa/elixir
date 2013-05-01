@@ -270,7 +270,7 @@ nav ul li{
 
 #giftcardContainer{
 	/*background-color: #CDCCCC;*/
-	background-color: red;
+	background-color: none;
 	z-index: 30;
 	width: 320px;
 	height: 100%;
