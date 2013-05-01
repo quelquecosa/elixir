@@ -1,9 +1,13 @@
 /*******/
 /*main container*/
+
+body{
+	background-color: #CDCCCC;
+}
+
 .app{
 	width: 320px;
 	height: 100%;
-	background-color: #CDCCCC;
 }
 
 
@@ -270,8 +274,7 @@ nav ul li{
 	z-index: 30;
 	width: 320px;
 	height: 100%;
-
-
+	/*position: fixed;*/
 }
 
 #giftcard{
@@ -284,9 +287,7 @@ nav ul li{
 	color: #444;
 	-webkit-transform: rotate(-90deg);
 	margin-left: -45px;
-
-
-
+	margin-top: 205px;
 }
 
 #giftcardRestaurantName{

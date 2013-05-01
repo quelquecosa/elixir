@@ -127,19 +127,8 @@ var app = {
 	
 	//same as above but for MyRewards instead
 	showGiftcard: function(){
-		$('.useButton').click(){
-			//in here make the giftcard appear
-				//make a nested function where if the user clicks on the x the giftcard disappears
-		};
-		
-		$.get('./yourRewards.html', function(data) {
-  			$('#availableRewardsContainer').replaceWith(data);
-  			console.log('ajax for rewardsYouCanGet worked!');
-  			$('#myCoinsButtonImage').attr("src","img/myCoinsButtonImage.png");
-  			$('#myRewardsButtonImage').attr("src","img/myRewardsButtonImageActive.png");
-		});
-		console.log ('loaded availableRewardsContainer');
-
+		$(".app").css( "opacity", "0" );
+		$('#giftcardContainer').transition({ y: '-680px' });
 	},
 
 	//not sure what this does, it came with phoneGap's emptyExample
