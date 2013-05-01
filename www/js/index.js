@@ -129,6 +129,8 @@ var app = {
 	showGiftcard: function(){
 		$(".app").css( "opacity", "0" );
 		$('#giftcardContainer').transition({ y: '-630px' });
+		document.getElementById('#giftcardContainer').focus();
+
 	},
 
 	//not sure what this does, it came with phoneGap's emptyExample
