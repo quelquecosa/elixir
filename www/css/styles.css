@@ -274,7 +274,7 @@ nav ul li{
 	z-index: 30;
 	width: 320px;
 	height: 100%;
-	/*position: fixed;*/
+	position: fixed;
 }
 
 #giftcard{
