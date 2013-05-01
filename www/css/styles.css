@@ -290,6 +290,15 @@ nav ul li{
 	margin-top: 205px;
 }
 
+#giftcardExitButton{
+	display:block;
+	float: right;
+	margin-top: -20px;
+	margin-right: -20px;
+	width: 45px;
+
+}
+
 #giftcardRestaurantName{
 	font-family: 'oceaniabold';
 	font-size: 25pt;
@@ -337,7 +346,6 @@ nav ul li{
 	padding-top: 5px;
 	padding-bottom: 18px;
 	padding-left: 50px;
-
 
 }
 
