@@ -128,8 +128,12 @@ var app = {
 	//same as above but for MyRewards instead
 	showGiftcard: function(){
 		$(".app").css( "opacity", "0" );
-		$('#giftcardContainer').transition({ y: '-630px' });
-		document.getElementById('#giftcardContainer').focus();
+		$('#giftcardContainer').transition({ y: '-630px' });		
+		$("#giftcardExitButton").click(function() {
+  			$(".app").css( "opacity", "100" );
+  			$('#giftcardContainer').transition({ y: '630px' });		
+  			console.log("closeButtonClicked");
+		});
 
 	},
 
