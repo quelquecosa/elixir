@@ -126,11 +126,15 @@ var app = {
 	},
 	
 	//same as above but for MyRewards instead
-	showGiftcard: function(){
-		$(".app").css( "opacity", "0" );
+	showGiftcard: function(name, money){
+		
+		$('#giftcardRestaurantName').html(name);
+		$('#giftcardAvailableCredit').html(money);
+
+		$('.app').transition({ opacity: 0 });
 		$('#giftcardContainer').transition({ y: '-630px' });		
 		$("#giftcardExitButton").click(function() {
-  			$(".app").css( "opacity", "100" );
+			$('.app').transition({ opacity: 100 });
   			$('#giftcardContainer').transition({ y: '630px' });		
   			console.log("closeButtonClicked");
 		});

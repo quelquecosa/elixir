@@ -167,6 +167,11 @@ header {
 
 }
 
+.usedBox{
+	width: 75px;
+	border-right: none !important;
+}
+
 .usedButton {
 	color: #888;
 }
@@ -225,7 +230,8 @@ nav ul li{
 	height: auto;
 	display: block;
 	margin: auto;	
-	padding-top: 3px;
+	padding-bottom:12px;
+	padding-top: 5px;
 }
 
 #scanButtonText {
