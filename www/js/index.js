@@ -105,6 +105,7 @@ var app = {
 		$.get('./rewardsYouCanGet.html', function(data) {
   			$('#rewardsContainer').replaceWith(data);
   			console.log('ajax for rewardsYouCanGet worked!');
+			boobyTrap();
   			$('#myRewardsButtonImage').attr("src","img/myRewardsButtonImage.png");
   			$('#myCoinsButtonImage').attr("src","img/myCoinsButtonImageActive.png");
 		});
@@ -115,14 +116,19 @@ var app = {
 	loadMyRewards: function(){
 		$('#pageDescription').html('Your rewards:');
 		
+		//fetch the html for the 'Rewards you can buy' container
+		//replace it in the right place, for the other screen
+		//after fetching, establish click handlers for USE button again…they get erased when you use $.replace 
 		$.get('./yourRewards.html', function(data) {
   			$('#availableRewardsContainer').replaceWith(data);
+  			boobyTrap();
   			console.log('ajax for rewardsYouCanGet worked!');
+  			
+  			//change the image on the button
   			$('#myCoinsButtonImage').attr("src","img/myCoinsButtonImage.png");
   			$('#myRewardsButtonImage').attr("src","img/myRewardsButtonImageActive.png");
-		});
+		}); //closes $.get request
 		console.log ('loaded availableRewardsContainer');
-
 	},
 	
 	//same as above but for MyRewards instead
