@@ -1,6 +1,7 @@
 //run the following when the DOM has finished loading:
 $(document).ready(function() {
-	console.log ('document ready');
+	
+	console.log (document.body.app);
 	logWindowDimensions();
 	boobyTrap();
 }); //closes onDocumentReady
@@ -35,15 +36,14 @@ function boobyTrap(){
 		var userCoins = $("#numberOfCoins").html();
 		console.log ("user has "+ userCoins +" coins.");
 		
-		if (userCoins>coinsNeeded){
-			//success!
-			console.log("user has enough coins.");
-		}
-		else{
+		if (userCoins<coinsNeeded){
 			//epic fail :(
 			alert("you need " + (coinsNeeded-userCoins) +" more coins for this reward!");
 			console.log ("user doesn't have enough coins.");
-			
+		}
+		else{
+			//success!
+			console.log("user has enough coins.");
 		} //closes else		
 	}); //closes .getButton click
 	

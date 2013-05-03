@@ -129,7 +129,7 @@ var app = {
   			$('#myRewardsButtonImage').attr("src","img/myRewardsButtonImageActive.png");
 		}); //closes $.get request
 		console.log ('loaded availableRewardsContainer');
-	},
+	}, 
 	
 	//same as above but for MyRewards instead
 	showGiftcard: function(name, money){
