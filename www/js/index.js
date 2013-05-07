@@ -63,7 +63,9 @@ var app = {
     },
     
     //cheese is the animation for when user gets a sucessful scan ('coronation')
-    cheese: function () {		
+    cheese: function () {	
+    
+    	$('#scanButtonImage').attr("src","img/scanImage.png");	
 		$('.cheese').transition({ 
 			y: '-400px'
 		});
@@ -83,6 +85,8 @@ var app = {
 				//plays sound defined in html <audio>
 				document.getElementById("sound").play();
 				app.updateCoins();
+				$('#scanButtonImage').attr("src","img/scanImageBW.png");	
+
 			}
 		);
 		$('.cheese').transition({y: '2400px'});
