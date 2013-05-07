@@ -363,14 +363,14 @@ nav ul li{
 	background-color: none;
 	z-index: 31;
 	width: 320px;
-	height: 80%;
+	height: 500px;
 	position: fixed;
 }
 
 #modal{
 	background-color: #F4F4F4;
 	width: 285px;
-	height: 150px;
+	height: 225px;
 	border:5pt solid;
 	border-radius:8px;
 	border-color: yellow;
@@ -381,16 +381,24 @@ nav ul li{
 
 #modalTitle{
 	font-family: 'oceaniabold';
-	font-size: 16pt;
+	font-size: 19pt;
 	text-transform:uppercase;
-	padding-top: 20px;
+	padding-top: 30px;
 }
 
 #modalMessage{
-	padding-top: 20px;
+	padding: 20px;
+	line-height: 18pt;
 }
 
-
+#exitModalButton{
+	margin-top: 10px;
+	width: 260px;
+	height: 40px;
+	font-family: 'oceaniaregular';
+	color: #444;
+	font-size: 14pt;
+}
 
 
 
