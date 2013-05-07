@@ -50,8 +50,8 @@ function boobyTrap(){
 	
 	$$('.app').doubleTap(function() {
     	// affects "span" children/grandchildren
-    	alert('double');
     	app.scan();
+    	console.log('double tap event detected! scan');
 	});	
 	
 }// closes boobyTrap()
