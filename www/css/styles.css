@@ -1,10 +1,15 @@
 /*******/
-/*main container*/
+/*console*/
 
+.console{
+	display: none;
+}
+
+/*******/
+/*main container*/
 body{
 	background-color: #CDCCCC;
 }
-
 .app{
 	width: 320px;
 	height: 100%;

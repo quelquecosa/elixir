@@ -38,7 +38,7 @@ function boobyTrap(){
 		if (userCoins<coinsNeeded){
 			//epic fail :(
 			/*alert("you need " + (coinsNeeded-userCoins) +" more coins for this reward!");*/
-			window.app.showModal();
+			window.app.showModal(userCoins, coinsNeeded);
 			console.log ("user doesn't have enough coins.");
 		}
 		else{
@@ -55,7 +55,8 @@ function boobyTrap(){
 	
 	$$('.app').swipeRight(function() {
     	app.scan();
-	});	
+	});
+*/	
 	
 }// closes boobyTrap()
 
@@ -66,5 +67,3 @@ function logWindowDimensions (){
 	};
 }//closes logWindowDimensions()
 
-
-		

@@ -171,7 +171,9 @@ var app = {
 		});
 
 	},
-	showModal: function (/*message*/) {
+	showModal: function (userCoins, coinsNeeded) {
+		var message = "you need " +(coinsNeeded-userCoins) +" coins to get this reward!";
+		$('#modalMessage').html(message);
 		$('.app').transition({ opacity: 0 });
 		$('#modalContainer').transition({ y: '-430px' });		
 		$("#exitModalButton").click(function() {
