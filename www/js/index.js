@@ -95,8 +95,12 @@ var app = {
 	
 	//sync number of coins with database
 	updateCoins: function(){
+		if (elixir.userCoins == 10){
+			elixir.userCoins = 0;
+			console.log ('number of coins reset!');
+		};
 		$('#numberOfCoins').html(elixir.userCoins);
-		console.log ('number of coins synced');
+		console.log ('number of coins written to the screen');
 	},
 	
 	//when the user clicks on the RewardsYouCanGet button (nav bar), the page description changes and new content is loaded.
