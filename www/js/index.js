@@ -22,6 +22,7 @@ var app = {
     },
     bind: function() {
         document.addEventListener('deviceready', this.deviceready, false);
+        
     },
     deviceready: function() {
         // This is an event handler function, which means the scope is the event.
@@ -150,14 +151,22 @@ var app = {
 		});
 
 	},
-	
-	showAlert: function (message) {
-        navigator.notification.alert(
-            message,  // message
-            alertDismissed,         // callback
-            'Game Over',            // title
-            'Done'                  // buttonName
-        );
+	configureModalDimensions : function(){
+		var modal = $('#modalContainer');
+		modal.css({
+			width: $(window).width(),
+			height: $(window).height(),
+			bottom: -$(window).height()
+		});
+	},
+	showModal: function (/*message*/) {
+		$('.app').transition({ opacity: 0 });
+		$('#modalContainer').transition({ y: '-630px' });		
+		$("#exitModal").click(function() {
+			$('.app').transition({ opacity: 100 });
+  			$('#modalContainer').transition({ y: '630px' });		
+  			console.log("modalClosed");
+		});
      },
 
 	//not sure what this does, it came with phoneGap's emptyExample

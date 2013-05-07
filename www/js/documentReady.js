@@ -1,7 +1,6 @@
 //run the following when the DOM has finished loading:
 $(document).ready(function() {
 	
-	console.log (document.body.app);
 	logWindowDimensions();
 	boobyTrap();
 }); //closes onDocumentReady
@@ -39,7 +38,8 @@ function boobyTrap(){
 		if (userCoins<coinsNeeded){
 			//epic fail :(
 			alert("you need " + (coinsNeeded-userCoins) +" more coins for this reward!");
-			app.showAlert("you need more coins!");
+			// mani
+			window.app.showModal();
 			console.log ("user doesn't have enough coins.");
 		}
 		else{
