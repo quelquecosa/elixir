@@ -87,10 +87,18 @@ var app = {
 				document.getElementById("sound").play();
 				app.updateCoins();
 				$('#scanButtonImage').attr("src","img/scanImageBW.png");	
-
+				if ($('#rewardsContainer').length > 0){
+					$('#myRewardsButtonImage').attr("src","img/myRewardsButtonImageActive.png");
+				}
+				else{
+					$('#myCoinsButtonImage').attr("src","img/myCoinsButtonImageActive.png");
+				}
 			}
 		);
+		$('.cheese').css('display', 'hidden');
 		$('.cheese').transition({y: '2400px'});
+		$('.cheese').css('display', 'inline');
+
 	},
 	
 	//adds one coin to the coin count
