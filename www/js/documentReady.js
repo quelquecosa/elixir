@@ -37,8 +37,7 @@ function boobyTrap(){
 		
 		if (userCoins<coinsNeeded){
 			//epic fail :(
-			alert("you need " + (coinsNeeded-userCoins) +" more coins for this reward!");
-			// mani
+			/*alert("you need " + (coinsNeeded-userCoins) +" more coins for this reward!");*/
 			window.app.showModal();
 			console.log ("user doesn't have enough coins.");
 		}
