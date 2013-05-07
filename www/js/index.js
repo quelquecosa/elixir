@@ -144,7 +144,7 @@ var app = {
   			$('#myRewardsButtonImage').attr("src","img/myRewardsButtonImageActive.png");
   			
   			//update the MyReward count, just in case user has just purchased a new one
-  			updateMyRewardsCount();
+  			app.updateMyRewardsCount();
 
 		}); //closes $.get request
 		console.log ('loaded availableRewardsContainer');
