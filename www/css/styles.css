@@ -370,13 +370,27 @@ nav ul li{
 #modal{
 	background-color: #F4F4F4;
 	width: 285px;
-	height: 300px;
+	height: 150px;
 	border:5pt solid;
 	border-radius:8px;
-	border-color: black;
+	border-color: yellow;
 	color: #444;
-	
+	margin-left: 12px;
+	text-align: center;
 }
+
+#modalTitle{
+	font-family: 'oceaniabold';
+	font-size: 16pt;
+	text-transform:uppercase;
+	padding-top: 20px;
+}
+
+#modalMessage{
+	padding-top: 20px;
+}
+
+
 
 
 
