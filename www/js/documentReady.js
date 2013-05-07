@@ -47,14 +47,11 @@ function boobyTrap(){
 		} //closes else		
 	}); //closes .getButton click
 	
-	$$('.app').tap(function() {
-    	// affects "span" children/grandchildren
-    	alert('single');
-	});	
 	
 	$$('.app').doubleTap(function() {
     	// affects "span" children/grandchildren
     	alert('double');
+    	app.scan();
 	});	
 	
 }// closes boobyTrap()
