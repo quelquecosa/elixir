@@ -87,18 +87,15 @@ var app = {
 				document.getElementById("sound").play();
 				app.updateCoins();
 				$('#scanButtonImage').attr("src","img/scanImageBW.png");	
-				if ($('#rewardsContainer').length > 0){
-					$('#myRewardsButtonImage').attr("src","img/myRewardsButtonImageActive.png");
-				}
-				else{
-					$('#myCoinsButtonImage').attr("src","img/myCoinsButtonImageActive.png");
-				}
 			}
 		);
-		$('.cheese').css('display', 'hidden');
 		$('.cheese').transition({y: '2400px'});
-		$('.cheese').css('display', 'inline');
-
+		if ($('#rewardsContainer').length > 0){
+			$('#myRewardsButtonImage').attr("src","img/myRewardsButtonImageActive.png");
+		}
+		else{
+			$('#myCoinsButtonImage').attr("src","img/myCoinsButtonImageActive.png");
+		}
 	},
 	
 	//adds one coin to the coin count
@@ -145,9 +142,19 @@ var app = {
   			//change the image on the button
   			$('#myCoinsButtonImage').attr("src","img/myCoinsButtonImage.png");
   			$('#myRewardsButtonImage').attr("src","img/myRewardsButtonImageActive.png");
+  			
+  			//update the MyReward count, just in case user has just purchased a new one
+  			updateMyRewardsCount();
+
 		}); //closes $.get request
 		console.log ('loaded availableRewardsContainer');
 	}, 
+	
+	updateMyRewardsCount: function(){
+		var totalNumberOfRewards = $('.oneReward').length;
+  		console.log(totalNumberOfRewards);
+  		$('#numberOfRewards').html(totalNumberOfRewards);
+	},
 	
 	//same as above but for MyRewards instead
 	showGiftcard: function(name, money){

@@ -128,6 +128,21 @@ header {
 
 .oneRewardUsed {
 	background-color: #DDDDDD;
+	border:2.5pt solid;
+	border-radius:8px;
+	width: 289.44px;
+	height: 72.8px;
+	margin: 0 14.7px 14.7px 14.7px;
+	display: table;
+}
+
+.oneRewardUsed > li {
+	display: inline-table;
+	border-right: 1pt solid;
+	border-color: #CCCCCC;
+	background-color: none;
+	display: table-cell;
+	vertical-align: middle;
 }
 
 .rewardsDivision{

@@ -1,6 +1,6 @@
 //run the following when the DOM has finished loading:
 $(document).ready(function() {
-	
+	app.updateMyRewardsCount();
 	logWindowDimensions();
 	boobyTrap();
 }); //closes onDocumentReady
@@ -47,16 +47,16 @@ function boobyTrap(){
 		} //closes else		
 	}); //closes .getButton click
 	
-	// special listener for double tap (doesnt work now)
-	//  put class="doubleTap" on the elements you need to double tap
-	$(".app").doubleTap(function(){
-		$("#console").html('doubleTap!');
-		app.scan();
-		});
-		$("#pageDescriptionBox").doubleTap(function(){
-		$("#console").html('doubleTap!');
-		app.scan();
-	});	//closes doubleTap()
+	$$('.app').tap(function() {
+    	// affects "span" children/grandchildren
+    	alert('single');
+	});	
+	
+	$$('.app').doubleTap(function() {
+    	// affects "span" children/grandchildren
+    	alert('double');
+	});	
+	
 }// closes boobyTrap()
 
 //log to the console the dimensions of the browser
