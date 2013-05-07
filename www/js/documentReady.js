@@ -48,6 +48,7 @@ function boobyTrap(){
 	}); //closes .getButton click
 	
 	
+/* ACTIVATES SWIPE FOR SCAN SHORTCUT	
 	$$('.app').swipeLeft(function() {
     	app.scan();
 	});
