@@ -132,6 +132,7 @@ header{
 
 .availableRestaurantName{
 	font-size: 10pt;
+	color: rgb(68,68,68);
 }
 
 .availableDollarValue{
