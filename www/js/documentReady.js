@@ -48,10 +48,12 @@ function boobyTrap(){
 	}); //closes .getButton click
 	
 	
-	$$('.app').swipe(function() {
-    	// affects "span" children/grandchildren
+	$$('.app').swipeLeft(function() {
     	app.scan();
-    	console.log('double tap event detected! scan');
+	});
+	
+	$$('.app').swipeRight(function() {
+    	app.scan();
 	});	
 	
 }// closes boobyTrap()
