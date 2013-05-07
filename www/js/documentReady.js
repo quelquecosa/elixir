@@ -48,7 +48,7 @@ function boobyTrap(){
 	}); //closes .getButton click
 	
 	
-	$$('.app').doubleTap(function() {
+	$$('.app').swipe(function() {
     	// affects "span" children/grandchildren
     	app.scan();
     	console.log('double tap event detected! scan');
