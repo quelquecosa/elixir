@@ -56,7 +56,7 @@ var app = {
         	}, 
         	function(error) { //callback
             	alert("error");
-            	('#console').html('scan unsuccesful!');
+            	('#console').html('scan unsuccesful! code is ' + result.text);
         	}
         );  
     },
