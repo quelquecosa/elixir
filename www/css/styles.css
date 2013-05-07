@@ -360,7 +360,7 @@ nav ul li{
 /* modalContainer holds the modal window pop up screen*/
 
 #modalContainer{
-	background-color: red;
+	background-color: none;
 	z-index: 31;
 	width: 320px;
 	height: 80%;
@@ -375,6 +375,7 @@ nav ul li{
 	border-radius:8px;
 	border-color: black;
 	color: #444;
+	
 }
 
 

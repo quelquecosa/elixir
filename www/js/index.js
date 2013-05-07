@@ -161,10 +161,10 @@ var app = {
 	},
 	showModal: function (/*message*/) {
 		$('.app').transition({ opacity: 0 });
-		$('#modalContainer').transition({ y: '-630px' });		
+		$('#modalContainer').transition({ y: '-430px' });		
 		$("#exitModal").click(function() {
 			$('.app').transition({ opacity: 100 });
-  			$('#modalContainer').transition({ y: '630px' });		
+  			$('#modalContainer').transition({ y: '430px' });		
   			console.log("modalClosed");
 		});
      },
