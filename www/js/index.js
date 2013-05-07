@@ -64,8 +64,9 @@ var app = {
     
     //cheese is the animation for when user gets a sucessful scan ('coronation')
     cheese: function () {	
-    
-    	$('#scanButtonImage').attr("src","img/scanImage.png");	
+    	$('#myCoinsButtonImage').attr("src","img/myCoinsButtonImage.png");	
+		$('#scanButtonImage').attr("src","img/scanImage.png");	
+    	$('#myRewardsButtonImage').attr("src","img/myRewardsButtonImage.png");	
 		$('.cheese').transition({ 
 			y: '-400px'
 		});
@@ -154,14 +155,6 @@ var app = {
   			console.log("closeButtonClicked");
 		});
 
-	},
-	configureModalDimensions : function(){
-		var modal = $('#modalContainer');
-		modal.css({
-			width: $(window).width(),
-			height: $(window).height(),
-			bottom: -$(window).height()
-		});
 	},
 	showModal: function (/*message*/) {
 		$('.app').transition({ opacity: 0 });
