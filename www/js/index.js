@@ -150,6 +150,15 @@ var app = {
 		});
 
 	},
+	
+	showAlert: function (message) {
+        navigator.notification.alert(
+            message,  // message
+            alertDismissed,         // callback
+            'Game Over',            // title
+            'Done'                  // buttonName
+        );
+     },
 
 	//not sure what this does, it came with phoneGap's emptyExample
     report: function(id) {
