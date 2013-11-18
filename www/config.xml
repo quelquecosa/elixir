@@ -50,6 +50,7 @@
     <plugin name="Media" value="CDVSound" />
     <gap:plugin name="BarcodeScanner" /> <!-- latest release -->
     <plugin name="Notification" value="CDVNotification" />
+
     <!--
         <gap:plugin name="Example" />
         A list of available plugins are available at https://build.phonegap.com/docs/plugins
